@@ -1,0 +1,158 @@
+@import "variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $very-dark-blue;
+  /*     background-image: url('/images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+ */
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+.general-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .cards {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .first {
+      background-color: $dark-blue;
+      width: 15vw;
+      height: 17.5vh;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      align-self: flex-start;
+
+      .logo {
+        margin-left: 2em;
+        margin-bottom: 1.5em;
+
+        img {
+          width: 80%;
+        }
+      }
+
+      .icons {
+        margin-left: 2em;
+
+        img {
+          background-color: $very-dark-blue;
+          padding: 10px;
+          border-radius: 10px;
+        }
+      }
+    }
+    .second {
+      background-color: $dark-blue;
+      width: 25vw;
+      height: 15vh;
+      margin-left: 1.5em;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .space-info {
+        margin-top: 2em;
+        margin-left: 2em;
+        margin-bottom: 1em;
+        width: 75%;
+        font-weight: 400;
+        text-align: left;
+
+
+        span {
+          font-weight: 700;
+        }
+      }
+       .bar {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .base {
+          background-color: $very-dark-blue;
+          width: 75%;
+          height: 1.5em;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+
+
+          .end {
+            background: rgb(255, 163, 153);
+            background: linear-gradient(
+              90deg,
+              rgba(255, 163, 153, 1) 0%,
+              rgba(255, 77, 151, 1) 100%
+            );
+            width: 80.1%;
+            height: 1em;
+            border-radius: 10px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+
+            
+            .dot {
+                margin-right: 2px;
+                width: 0.8em;
+                height: 0.8em;
+                background-color: white;
+                border-radius: 40px;
+
+            }
+          }
+        }
+      }
+      .gb {
+          width: 75%;
+          height: 2em;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 0.5em;
+      }
+    }
+  }
+
+  .gb-left {
+    background-color: white;
+    color: black;
+    position: absolute;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
